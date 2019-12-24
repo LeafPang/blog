@@ -1,0 +1,76 @@
+html,body {
+  font-size: 20px;
+}
+
+span {
+  font-size: 2em;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+}
+.item {
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #e5e4e9;
+}
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.container2 {
+  display: flex;
+}
+.zhang {
+  flex: 0 2 100px;
+}
+.xin,.xu {
+  flex: 0 1 100px;
+}
+.shuai {
+  flex: 3 0 20px;
+}
+.ge {
+  flex: 2 0 20px;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  border-width: 3px;
+  border-left-width: 0;
+  background: #58a linear-gradient(hsla(0,0%,100%,0.2),transparent);
+  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+  color: #fff;
+  text-shadow: 0 .2rem .4rem rgba(0, 0, 0, .5);
+  font-size: 2rem;
+}
+button.ok {
+  background-color: #c00;
+}
+button.cancel {
+  background-color: #6b0;
+}
+.tip {
+  position: relative;
+  display: inline-block;
+  padding: .2rem;
+  background: #c00 linear-gradient(hsla(0,0%,100%,0.2),transparent);
+  color: #333;
+}
+.tip::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  padding: .4rem;
+  background: inherit;
+  border: inherit;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  top: 1rem;
+  left: 1rem;
+}

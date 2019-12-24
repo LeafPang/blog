@@ -1,3 +1,12 @@
 # blog
-this is my first commit。
-this is my second commit.
+css魔法
+1.背景与边框
+一般情况下，元素背景是要延伸到边框下面的，想要解决此问题，用到下面的css代码片段
+ #hsla即色相、饱和度、亮度、透明度（英语：Hue, Saturation, Lightness, Alpha ）
+ #色相（H）是色彩的基本属性，就是平常所说的颜色名称，如红色、黄色等。
+ #饱和度（S）是指色彩的纯度，越高色彩越纯，低则逐渐变灰，取 0-100% 的数值。
+ #亮度（L） 取 0-100%，增加亮度，颜色会向白色变化；减少亮度，颜色会向黑色变化。
+ #透明度（A） 取值 0~1 之间， 代表透明度。
+border:10px solid hsla(0,0%,100%,0.2);
+background:#fff;
+background-clip:padding-box;
